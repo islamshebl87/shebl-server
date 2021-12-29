@@ -2,9 +2,10 @@ require('dotenv').config()
 const Airtable = require('airtable-node');
  
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY })
-  //  .base('appDyQAhKmPQk7edJ')
+   .base('appDyQAhKmPQk7edJ')
+ //appDyQAhKmPQk7edJ/
 //   appDyQAhKmPQk7edJ
- .base("appYq3DxwKR3B1cej")
+ //.base("appYq3DxwKR3B1cej")
   .table("products");
 
 exports.handler = async (event,context,cb) =>{
